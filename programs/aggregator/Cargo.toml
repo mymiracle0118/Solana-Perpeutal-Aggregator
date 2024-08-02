@@ -1,20 +1,21 @@
 [package]
-name = "perpetual_cpi"
+name = "perpetual_aggregator"
 version = "0.1.0"
-description = "Created with Anchor"
+description = "Perpetual Aggregator"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "perpetual_cpi"
+name = "perpetual_aggregator"
 
 [features]
-default = ["cpi"]
+default = []
 no-entrypoint = []
 no-idl = []
 no-log-ix-name = []
 cpi = ["no-entrypoint"]
 
 [dependencies]
-anchor-gen = { version = "0.3.0", path = "../../crates/anchor-gen" }
+perpetual_cpi = { version = "0.1.0", path = "../perpetual_cpi" }
+presale_cpi = { version = "0.1.0", path = "../presale_cpi" }
 anchor-lang = ">=0.20"

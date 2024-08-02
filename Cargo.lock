@@ -888,6 +888,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "perpetual_aggregator"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "perpetual_cpi",
+ "presale_cpi",
+]
+
+[[package]]
 name = "perpetual_cpi"
 version = "0.1.0"
 dependencies = [
@@ -902,6 +911,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dee4364d9f3b902ef14fab8a1ddffb783a1cb6b4bba3bfc1fa3922732c7de97f"
 dependencies = [
  "zerocopy",
+]
+
+[[package]]
+name = "presale_cpi"
+version = "0.1.0"
+dependencies = [
+ "anchor-gen",
+ "anchor-lang",
 ]
 
 [[package]]
@@ -1087,9 +1104,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.121"
+version = "1.0.122"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4ab380d7d9f22ef3f21ad3e6c1ebe8e4fc7a2000ccba2e4d71fc96f15b2cb609"
+checksum = "784b6203951c57ff748476b126ccb5e8e2959a5c19e5c617ab1956be3dbc68da"
 dependencies = [
  "itoa",
  "memchr",
