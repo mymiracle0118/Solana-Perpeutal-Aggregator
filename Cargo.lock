@@ -949,7 +949,6 @@ dependencies = [
  "anchor-lang",
  "anchor-spl",
  "perpetual_cpi",
- "presale_cpi",
  "spl-token",
 ]
 
@@ -968,14 +967,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dee4364d9f3b902ef14fab8a1ddffb783a1cb6b4bba3bfc1fa3922732c7de97f"
 dependencies = [
  "zerocopy",
-]
-
-[[package]]
-name = "presale_cpi"
-version = "0.1.0"
-dependencies = [
- "anchor-gen",
- "anchor-lang",
 ]
 
 [[package]]
